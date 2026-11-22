@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Galería de Hacienda El Mundo.">
+  <title>Galería · Hacienda El Mundo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="assets/logo-nelore-frontal.png" alt=""></span><span class="brand-name">Hacienda El Mundo</span></a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="nosotros.html">Quiénes somos</a><a href="ganado.html">Nuestro ganado</a><a href="venta.html">Venta</a><a href="genetica.html">Genética</a><a aria-current="page" href="galeria.html">Galería</a><a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="menu-button" aria-expanded="false" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="page-intro">
+      <div class="container">
+        <p class="eyebrow">La hacienda</p>
+        <h1 class="display-title">Galería</h1>
+        <p class="lead">Una mirada a los animales, las pasturas y el trabajo diario de Hacienda El Mundo.</p>
+      </div>
+    </section>
+    <section class="section" id="fotografias">
+      <div class="container">
+        <div class="gallery-grid">
+          <button class="gallery-item reveal" data-caption="Ganado en el corral" data-full="assets/gallery/ganado-corral-1.jpg" aria-label="Ampliar ganado Nelore en el corral"><img src="assets/gallery/ganado-corral-1.jpg" alt="Ganado Nelore de Hacienda El Mundo en el corral" loading="lazy"></button>
+          <button class="gallery-item reveal" data-caption="Nuestro hato" data-full="assets/gallery/ganado-corral-2.jpg" aria-label="Ampliar hato Nelore"><img src="assets/gallery/ganado-corral-2.jpg" alt="Hato Nelore reunido en Hacienda El Mundo" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+    <section class="section gallery-videos-section" id="videos">
+      <div class="container">
+        <div class="home-section-heading reveal">
+          <div><p class="eyebrow">Videos</p><h2>La hacienda en movimiento.</h2></div>
+          <p>Recorridos y escenas reales del ganado y del trabajo cotidiano.</p>
+        </div>
+        <div class="gallery-video-grid">
+          <figure class="gallery-video reveal"><button class="gallery-video-open" type="button" data-video-src="assets/gallery/hacienda-video-1.mp4" data-video-poster="assets/gallery/hacienda-video-1-poster.jpg" data-video-title="Ganado de Hacienda El Mundo" aria-label="Ampliar video Ganado de Hacienda El Mundo"><img src="assets/gallery/hacienda-video-1-poster.jpg" alt="Ganado de Hacienda El Mundo"><span class="gallery-video-play" aria-hidden="true">▶</span><span class="gallery-video-expand" aria-hidden="true">↗</span></button><figcaption>Ganado de Hacienda El Mundo</figcaption></figure>
+          <figure class="gallery-video reveal"><button class="gallery-video-open" type="button" data-video-src="assets/gallery/hacienda-video-2.mp4" data-video-poster="assets/gallery/hacienda-video-2-poster.jpg" data-video-title="Trabajo diario en la hacienda" aria-label="Ampliar video Trabajo diario en la hacienda"><img src="assets/gallery/hacienda-video-2-poster.jpg" alt="Trabajo diario en la hacienda"><span class="gallery-video-play" aria-hidden="true">▶</span><span class="gallery-video-expand" aria-hidden="true">↗</span></button><figcaption>Trabajo diario en la hacienda</figcaption></figure>
+          <figure class="gallery-video reveal"><button class="gallery-video-open" type="button" data-video-src="assets/gallery/hacienda-video-3.mp4" data-video-poster="assets/gallery/hacienda-video-3-poster.jpg" data-video-title="Nuestro ganado" aria-label="Ampliar video Nuestro ganado"><img src="assets/gallery/hacienda-video-3-poster.jpg" alt="Nuestro ganado"><span class="gallery-video-play" aria-hidden="true">▶</span><span class="gallery-video-expand" aria-hidden="true">↗</span></button><figcaption>Nuestro ganado</figcaption></figure>
+          <figure class="gallery-video reveal"><button class="gallery-video-open" type="button" data-video-src="assets/gallery/hacienda-video-4.mp4" data-video-poster="assets/gallery/hacienda-video-4-poster.jpg" data-video-title="Hacienda El Mundo" aria-label="Ampliar video Hacienda El Mundo"><img src="assets/gallery/hacienda-video-4-poster.jpg" alt="Hacienda El Mundo"><span class="gallery-video-play" aria-hidden="true">▶</span><span class="gallery-video-expand" aria-hidden="true">↗</span></button><figcaption>Hacienda El Mundo</figcaption></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Fotografía ampliada" aria-hidden="true"><button class="close-button" id="lightboxClose" aria-label="Cerrar">×</button><img id="lightboxImage" src="" alt=""></div>
+  <div class="video-lightbox" id="videoLightbox" role="dialog" aria-modal="true" aria-labelledby="videoLightboxTitle" aria-hidden="true"><div class="video-lightbox-dialog"><button class="close-button" id="videoLightboxClose" aria-label="Cerrar video">×</button><video id="videoLightboxPlayer" controls playsinline preload="metadata"></video><p id="videoLightboxTitle"></p></div></div>
+  <footer class="site-footer"><div class="container footer-row"><span>© <span data-year></span> Hacienda El Mundo</span><span>Santa Cruz, Bolivia</span></div></footer>
+  <script src="site.js"></script>
+</body>
+</html>
